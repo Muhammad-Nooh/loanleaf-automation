@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "application": "loanleaf",
+  "baselineVersion": 0,
+  "approvalStatus": "candidate-awaiting-manual-approval",
+  "capturedAt": "2026-11-04T08:58:15.209Z",
+  "approvedAt": null,
+  "approvedBy": null,
+  "apiEndpoints": [],
+  "uiScreens": [],
+  "expectedChanges": [],
+  "contentSha256": "a4ddad2acdec3554194c7d870f15b2ab09259fee3672b6b6557a81163f1b4919",
+  "note": "Generated candidate only. Review and manually approve; the QA runner never promotes candidates to approved baselines."
+}

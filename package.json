@@ -8,6 +8,8 @@
     "test:headed": "playwright test --headed",
     "test:loanleaf": "playwright test --project=loanleaf",
     "test:ciihive": "playwright test --project=ciihive",
+    "test:qa-engine": "node --test tests/unit/qa-engine.test.mjs",
+    "qa": "node scripts/qa.mjs",
     "codegen:loanleaf": "playwright codegen https://loanleaf.mfsys.com.pk/auth/login",
     "codegen:ciihive": "playwright codegen https://ebdaa.mfsys.com.pk/#/login",
     "report": "playwright show-report"

@@ -1,0 +1,110 @@
+{
+  "application": "loanleaf",
+  "module": "Loan Management",
+  "screen": "Promissory Note",
+  "route": "/home/loan/pendingPromissoryNote",
+  "outcome": "passed",
+  "coverageStatus": "route-rechecked",
+  "screenshotPath": "system-analysis/reports/2026/11/2026-11-04T09-03-19-351Z-21036/observations/screenshots/loanleaf/loan-management/-home-loan-pendingPromissoryNote.png",
+  "uiScreen": {
+    "application": "loanleaf",
+    "module": "Loan Management",
+    "screen": "Promissory Note",
+    "route": "/home/loan/pendingPromissoryNote",
+    "structure": {
+      "tagCounts": {
+        "app-loader": 1,
+        "app-notification": 1,
+        "app-root": 1,
+        "defs": 1,
+        "div": 1,
+        "noscript": 1,
+        "path": 1,
+        "polyline": 1,
+        "router-outlet": 1,
+        "script": 4,
+        "svg": 1
+      },
+      "roleCounts": {},
+      "fieldLabels": [],
+      "navigationRoutes": [],
+      "validationMessageCount": 0,
+      "controls": {
+        "buttons": 0,
+        "links": 0,
+        "inputs": 0,
+        "selects": 0,
+        "textareas": 0,
+        "forms": 0,
+        "tables": 0
+      }
+    }
+  },
+  "apiObservations": [
+    {
+      "application": "loanleaf",
+      "module": "Loan Management",
+      "trafficType": "external-browser-api",
+      "action": "open Loan Management / Promissory Note",
+      "host": "maps.googleapis.com",
+      "method": "GET",
+      "path": "/maps/api/mapsjs/gen_204",
+      "queryKeys": [
+        "csp_test"
+      ],
+      "requestHeaderNames": [
+        "accept-language",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "user-agent"
+      ],
+      "authenticationBehavior": "unknown",
+      "status": 200,
+      "durationMs": 663,
+      "responseHeaderNames": [
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "alt-svc",
+        "content-encoding",
+        "content-length",
+        "content-type",
+        "date",
+        "server",
+        "server-timing",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options",
+        "x-xss-protection"
+      ],
+      "responsePayloadShape": {}
+    },
+    {
+      "application": "loanleaf",
+      "module": "Security / Authentication",
+      "trafficType": "application-api",
+      "action": "open Loan Management / Promissory Note",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/security/translation/loanleaf/getTranslations",
+      "queryKeys": [
+        "POR_ORGACODE",
+        "language"
+      ],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "channelcode",
+        "pororgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "user-agent"
+      ],
+      "authenticationBehavior": "unknown"
+    }
+  ],
+  "droppedObservations": 0
+}

@@ -1,30 +1,32 @@
 import { expect, Page } from '@playwright/test';
 
-/**
- * LoanLeaf login. The locators below are first guesses (the page is a JS app
- * that could not be inspected up front). Refine them with:
- *   npm run codegen:loanleaf
- */
 export class LoanLeafLoginPage {
   constructor(private page: Page) {}
 
-  private get username() {
-    return this.page
-      .getByLabel(/user ?(name|id)|email|login/i)
-      .or(this.page.locator('input[type="text"], input[type="email"]').first())
-      .first();
+  private get orgCode() {
+    return this.page.getByLabel(/organization|org|رقم المنظمة/i).first();
   }
-  private get password() { return this.page.locator('input[type="password"]').first(); }
+  private get username() {
+    return this.page.getByLabel(/user|رقم المستخدم/i).first();
+  }
+  private get password() {
+    return this.page.getByLabel(/password|كلمة المرور/i).first();
+  }
   private get submit() {
-    return this.page.getByRole('button', { name: /log ?in|sign ?in|submit/i }).first();
+    return this.page
+      .getByRole('button', { name: /log ?in|sign ?in|submit|تسجيل الدخول/i })
+      .first();
   }
 
   async open(url: string) {
     await this.page.goto(url);
+    await expect(this.orgCode).toBeVisible();
+    await expect(this.username).toBeVisible();
     await expect(this.password).toBeVisible();
   }
 
-  async login(user: string, pass: string) {
+  async login(orgCode: string, user: string, pass: string) {
+    await this.orgCode.fill(orgCode);
     await this.username.fill(user);
     await this.password.fill(pass);
     await this.submit.click();

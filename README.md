@@ -28,6 +28,10 @@ npm run test:loanleaf       # LoanLeaf only
 npm run test:ciihive        # CiiHive only
 npm run test:headed         # watch the browser
 npm run report              # open the HTML report
+npm run qa -- --app loanleaf --module "Loan Management"
+npm run qa -- --app cihive --module "Customer Registration"
+npm run qa -- --scope integration
+npm run qa                  # all registered read-only checks
 ```
 
 Each app logs in once in a `setup` project and the session is saved under
@@ -52,6 +56,16 @@ npm run codegen:ciihive
 | `src/data/customer.ts` | Fresh unique test customer per run |
 | `tests/setup/` | Login steps that save each app's session |
 | `tests/loanleaf/`, `tests/ciihive/` | Specs, numbered in chain order |
+
+## System analysis
+
+The evidence-bounded application inventories, observed APIs, integration
+findings, database access status, and QA scenarios are maintained in
+[system-analysis/README.md](./system-analysis/README.md). Database schemas and
+cross-application synchronization remain unverified until read-only access and
+authorized correlation evidence are available. The reusable recheck framework,
+dependency registry, baseline approval process, and historical reports are
+described in [system-analysis/qa/recheck-engine.md](./system-analysis/qa/recheck-engine.md).
 
 ## Roadmap
 

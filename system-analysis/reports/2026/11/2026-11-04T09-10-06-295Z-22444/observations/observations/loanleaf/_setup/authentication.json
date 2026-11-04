@@ -1,0 +1,7 @@
+{
+  "application": "loanleaf",
+  "module": "Authentication",
+  "screen": "Login setup",
+  "outcome": "passed",
+  "coverageStatus": "setup"
+}

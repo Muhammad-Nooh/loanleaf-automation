@@ -1,0 +1,797 @@
+{
+  "application": "ciihive",
+  "module": "General Ledger",
+  "screen": "Authenticated shell (screen route unmapped)",
+  "route": "/",
+  "outcome": "passed",
+  "coverageStatus": "blocked-screen-route-unmapped",
+  "screenshotPath": "system-analysis/reports/2026/11/2026-11-04T09-02-49-081Z-15040/observations/screenshots/ciihive/general-ledger/shell.png",
+  "uiScreen": {
+    "application": "ciihive",
+    "module": "General Ledger",
+    "screen": "Authenticated shell (screen route unmapped)",
+    "route": "/",
+    "structure": {
+      "tagCounts": {
+        "a": 317,
+        "app-footer": 1,
+        "app-menu": 1,
+        "app-rightpanel": 1,
+        "app-root": 1,
+        "app-topbar": 1,
+        "button": 1,
+        "circle": 1,
+        "div": 916,
+        "h1": 8,
+        "i": 401,
+        "iframe": 1,
+        "img": 1,
+        "input": 1,
+        "label": 2,
+        "li": 333,
+        "my-app": 1,
+        "p-blockui": 1,
+        "p-dialog": 3,
+        "p-progressspinner": 1,
+        "p-scrollpanel": 2,
+        "p-toast": 1,
+        "router-outlet": 2,
+        "script": 5,
+        "span": 359,
+        "svg": 1,
+        "ul": 103
+      },
+      "roleCounts": {
+        "alert": 1,
+        "menuitem": 31
+      },
+      "fieldLabels": [
+        "Branch: 0001 - Head Office / Main Branch",
+        "Sunday, 1 November 2026"
+      ],
+      "navigationRoutes": [
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/approval",
+        "#/home/audit-inquiry",
+        "#/home/audit-inquiry",
+        "#/home/blacklist-replication-sync",
+        "#/home/config/close-day-operation",
+        "#/home/config/close-year-operation",
+        "#/home/config/daily-process",
+        "#/home/config/exchgrate",
+        "#/home/deposit/cashdeposit/global",
+        "#/home/deposit/cashtdrencashment/global",
+        "#/home/deposit/cashtdrissuance/global",
+        "#/home/deposit/cashwithdrawl/global",
+        "#/home/deposit/chargeexemption/global",
+        "#/home/deposit/earlyencashment/global",
+        "#/home/deposit/soc/global",
+        "#/home/deposit/soc/global",
+        "#/home/deposit/soc/global",
+        "#/home/deposit/soc/global",
+        "#/home/deposit/tdr-application/global",
+        "#/home/deposit/tdr-application/global",
+        "#/home/deposit/tdr-application/global",
+        "#/home/deposit/tdr-application/global",
+        "#/home/deposit/tdrencashment/global",
+        "#/home/deposit/tdrissuance/global",
+        "#/home/depositTransaction/authorize/global",
+        "#/home/depositTransaction/cancel/global",
+        "#/home/depositTransaction/depositaccountrate/global",
+        "#/home/depositTransaction/depositclosure/global",
+        "#/home/depositTransaction/depositprofitposting/global",
+        "#/home/depositTransaction/reversal/global",
+        "#/home/depositproduct/configure/global",
+        "#/home/depositproduct/configure/global",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic",
+        "#/home/dynamic/file-blacklisting",
+        "#/home/dynamic/file-blacklisting",
+        "#/home/form",
+        "#/home/geogroup-inquiry",
+        "#/home/kpiAllocation",
+        "#/home/ledger/authorize/global",
+        "#/home/ledger/coa/global",
+        "#/home/ledger/glmatrix/global",
+        "#/home/ledger/tempVoucher/authorize/global",
+        "#/home/ledgerTransaction/cancel/global",
+        "#/home/ledgerTransaction/reversal/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loan-application/global",
+        "#/home/loanTransaction/authorize/global",
+        "#/home/loanTransaction/cancel/global",
+        "#/home/loanTransaction/cashgroupdisburse/global",
+        "#/home/loanTransaction/cashgrouprepay/global",
+        "#/home/loanTransaction/cashindvdisburse/global",
+        "#/home/loanTransaction/cashindvrepay/global",
+        "#/home/loanTransaction/cashmanualrepay/global",
+        "#/home/loanTransaction/certificateFeeDeduction/global",
+        "#/home/loanTransaction/editLoanSchedule/global",
+        "#/home/loanTransaction/feeDeduction/global",
+        "#/home/loanTransaction/groupdisburse/global",
+        "#/home/loanTransaction/grouprepay/global",
+        "#/home/loanTransaction/indvdisburse/global",
+        "#/home/loanTransaction/indvrepay/global",
+        "#/home/loanTransaction/loanEarlySettlement/global",
+        "#/home/loanTransaction/loanTopup/global",
+        "#/home/loanTransaction/loanaccountrate/global",
+        "#/home/loanTransaction/loanchargeswaiver/global",
+        "#/home/loanTransaction/loanclosure/global",
+        "#/home/loanTransaction/loanrestructure/global",
+        "#/home/loanTransaction/manualrepay/global",
+        "#/home/loanTransaction/reversal/global",
+        "#/home/loanTransaction/writeoff/global",
+        "#/home/loanTransaction/writeoffincome/global",
+        "#/home/loanproduct/configure/global",
+        "#/home/loanproduct/configure/global",
+        "#/home/menu",
+        "#/home/miscTransaction/account-account/global",
+        "#/home/miscTransaction/account-gl/global",
+        "#/home/miscTransaction/gl-account/global",
+        "#/home/miscTransaction/gl-gl/global",
+        "#/home/miscTransaction/one-many/global",
+        "#/home/miscTransaction/temp-voucher-modification/global",
+        "#/home/miscTransaction/temporary-voucher/global",
+        "#/home/module",
+        "#/home/product/deposit-advance-accounting-matrix",
+        "#/home/product/loan-advance-accounting-matrix",
+        "#/home/replication-sync",
+        "#/home/report",
+        "#/home/reportdesigner",
+        "#/home/sec/functionality-allocation",
+        "#/home/sec/role-activity-allocation",
+        "#/home/sec/user",
+        "#/home/sec/user-activity-allocation",
+        "#/home/submodule",
+        "#/home/transaction/bulk-gl-upload",
+        "#/home/transaction/data-upload",
+        "#/home/transaction/data-upload",
+        "#/home/transaction/data-upload",
+        "#/home/userbatch/global",
+        "#/home/userbatch/global",
+        "#/home/userbatch/global",
+        "#/home/userbatch/global",
+        "#/home/workflow",
+        "/",
+        "/",
+        "/",
+        "/",
+        "/",
+        "/",
+        "/"
+      ],
+      "validationMessageCount": 1,
+      "controls": {
+        "buttons": 1,
+        "links": 184,
+        "inputs": 1,
+        "selects": 0,
+        "textareas": 0,
+        "forms": 0,
+        "tables": 0
+      }
+    }
+  },
+  "apiObservations": [
+    {
+      "application": "ciihive",
+      "module": "Security / Authentication",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/security/translation/getTranslations",
+      "queryKeys": [
+        "POR_ORGACODE",
+        "language"
+      ],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 87,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "versionNo": "<number>",
+        "en": {
+          "MBM_BKMSNUMBER": "<string>",
+          "MBM_BKMSTITLE": "<string>",
+          "CMP_EMPLOYEE": "<string>",
+          "CFLI_LIFEINSURANCE": "<string>",
+          "CIT_ID_ISSUANCE": "<string>",
+          "CIT_ID_ISSUANCE_2": "<string>",
+          "CARD_NUMBER": "<string>",
+          "BNS_CLIENT_RELATION": "<string>",
+          "customerIncomeProfile": "<string>",
+          "CMP_CUSTPRTGNAME": "<string>",
+          "SP_OCCUPATION": "<string>",
+          "customerParentInfoCard": "<string>",
+          "KYC_ANNUAL_INCOME": "<string>",
+          "CMP_FIRSTNAME": "<string>",
+          "CMP_LASTNAME": "<string>",
+          "CMP_FULLNAME": "<string>",
+          "CMP_MOTHERNAME": "<string>",
+          "CMP_FIRSTNAME_ENGLISH": "<string>",
+          "CMP_LASTNAME_EN": "<string>",
+          "CMP_FULLNAME_EN": "<string>",
+          "CMP_MOTHERNAME_ENG": "<string>",
+          "DATE": "<string>"
+        },
+        "en_userdefined": {
+          "BN_WF_FA_FREEZACC": "<string>",
+          "BN_WF_UB_UNBLOCK": "<string>",
+          "BN_WF_B_BLOCK": "<string>",
+          "BN_WF_UNFA_UNFREEZACC": "<string>",
+          "BN_WF_IL_LOANREVIEW": "<string>",
+          "BN_WF_ES_EARLYSETTLEMENT": "<string>",
+          "BN_WF_CW_CHARGEWAIVER": "<string>"
+        }
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "Workflow Inquiry",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/report/generate/pendingworkflow",
+      "queryKeys": [],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "content-type",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "requestPayloadShape": {
+        "porOrgacode": "<string>",
+        "plcLocacode": "<string>",
+        "mfsysLogin": "<boolean>",
+        "assignedWorkflows": {
+          "crm": [
+            "<string>"
+          ],
+          "loan": [
+            "<string>"
+          ],
+          "deposit": [
+            "<string>"
+          ],
+          "generalledger": [
+            "<string>"
+          ],
+          "configuration": [
+            "<string>"
+          ]
+        },
+        "assignedActivities": {
+          "crm": [
+            "<string>"
+          ],
+          "configuration": [
+            "<string>"
+          ],
+          "loan": [
+            "<string>"
+          ],
+          "deposit": [
+            "<string>"
+          ],
+          "generalledger": [
+            "<string>"
+          ]
+        }
+      },
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 220,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "termDeposit": [
+          {
+            "workFlowDescription": "<string>",
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ],
+        "userbatch": [
+          {
+            "workFlowDescription": "<string>",
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ],
+        "loan": [
+          {
+            "workFlowDescription": "<string>",
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ],
+        "deposit": [
+          {
+            "workFlowDescription": "<string>",
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ],
+        "instrumentManagement": [
+          {
+            "workFlowDescription": "<string>",
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ],
+        "company": [
+          {
+            "workFlowDescription": "<string>",
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ],
+        "banksetup": [
+          {
+            "workFlowDescription": "<string>",
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ],
+        "crm": [
+          {
+            "count": "<number>",
+            "workFlowId": "<string>"
+          }
+        ]
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "Configuration",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/configuration/organizations/timezone",
+      "queryKeys": [],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 71,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "bgpGlprcompanytimezone": "<string>"
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "Configuration",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/configuration/organizations/{id}/dailyoperations/companydate",
+      "queryKeys": [
+        "POR_ORGACODE"
+      ],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 104,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "module": "<string>",
+        "bgpGlprcompanydate": "<string>"
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "Loan Origination",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/loan/organizations/{id}/dailyoperations/companydate",
+      "queryKeys": [
+        "POR_ORGACODE"
+      ],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 68,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "module": "<string>",
+        "bgpGlprcompanydate": "<string>"
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "Deposit Operations",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/deposit/organizations/{id}/dailyoperations/companydate",
+      "queryKeys": [
+        "POR_ORGACODE"
+      ],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 96,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "module": "<string>",
+        "bgpGlprcompanydate": "<string>"
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "General Ledger",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/generalledger/organizations/{id}/dailyoperations/companydate",
+      "queryKeys": [
+        "POR_ORGACODE"
+      ],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 86,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "module": "<string>",
+        "bgpGlprcompanydate": "<string>"
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "Configuration",
+      "trafficType": "application-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "www.ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/configuration/organizations/{id}/dailyoperations/companydate",
+      "queryKeys": [
+        "POR_ORGACODE"
+      ],
+      "requestHeaderNames": [
+        "accept",
+        "accept-language",
+        "por_orgacode",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sus_usercode",
+        "user-agent"
+      ],
+      "authenticationBehavior": "session-request",
+      "status": 200,
+      "durationMs": 89,
+      "responseHeaderNames": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "content-encoding",
+        "content-security-policy",
+        "content-type",
+        "date",
+        "permissions-policy",
+        "referrer-policy",
+        "server",
+        "strict-transport-security",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "responsePayloadShape": {
+        "module": "<string>",
+        "bgpGlprcompanydate": "<string>"
+      }
+    },
+    {
+      "application": "ciihive",
+      "module": "General Ledger",
+      "trafficType": "external-browser-api",
+      "action": "open General Ledger / Authenticated shell (screen route unmapped)",
+      "host": "maps.googleapis.com",
+      "method": "GET",
+      "path": "/maps/api/mapsjs/gen_204",
+      "queryKeys": [
+        "csp_test"
+      ],
+      "requestHeaderNames": [
+        "accept-language",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "user-agent"
+      ],
+      "authenticationBehavior": "unknown",
+      "status": 200,
+      "durationMs": 458,
+      "responseHeaderNames": [
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "alt-svc",
+        "content-encoding",
+        "content-length",
+        "content-type",
+        "date",
+        "server",
+        "server-timing",
+        "vary",
+        "x-content-type-options",
+        "x-frame-options",
+        "x-xss-protection"
+      ],
+      "responsePayloadShape": {}
+    }
+  ],
+  "droppedObservations": 0
+}

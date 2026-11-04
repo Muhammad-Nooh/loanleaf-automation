@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "application": "loanleaf",
+  "baselineVersion": 0,
+  "approvalStatus": "not-approved",
+  "approvedAt": null,
+  "approvedBy": null,
+  "apiEndpoints": [],
+  "uiScreens": [],
+  "expectedChanges": [],
+  "note": "No baseline is approved yet. Candidate observations must be reviewed and manually approved before comparison can treat them as expected."
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "executionTimestamp": "2026-11-04T08:58:15.211Z",
+  "command": [
+    "--app",
+    "loanleaf",
+    "--module",
+    "Loan Management"
+  ],
+  "executionStatus": "invalid-run",
+  "changeDescription": null,
+  "selectedApplications": [
+    "loanleaf"
+  ],
+  "selectedModules": [
+    {
+      "application": "loanleaf",
+      "module": "Loan Management"
+    }
+  ],
+  "tests": {
+    "executed": [],
+    "passed": 0,
+    "failed": 0,
+    "expected": 13,
+    "missing": 13,
+    "playwrightExitCode": 0
+  },
+  "apiChanges": [],
+  "uiChanges": [],
+  "potentialRegressions": [],
+  "baselines": {
+    "loanleaf": "not-approved"
+  },
+  "baselineCandidates": [
+    "loanleaf-baseline-candidate.json"
+  ],
+  "screenshots": [],
+  "blockers": [
+    "Invalid implementation attempt: Playwright discovered no module recheck tests. This run contains no application evidence and must not be used as a baseline.",
+    "Database-backed checks are blocked until dedicated read-only access and connection requirements are confirmed.",
+    "loanleaf has no approved baseline; differences are candidates for review, not regressions against an approved snapshot."
+  ],
+  "recommendations": [
+    "Review each baseline candidate and manually approve only after confirming expected UI/API behavior.",
+    "Use a non-production environment and explicit authorization before running state-changing scenarios.",
+    "Provide authorized read-only DB access before claiming API-to-database mappings or cross-application record correlation."
+  ],
+  "apiObservations": [],
+  "uiScreens": {
+    "loanleaf": []
+  }
+}

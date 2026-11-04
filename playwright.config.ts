@@ -33,5 +33,29 @@ export default defineConfig({
       dependencies: ['setup-ciihive'],
       use: { storageState: AUTH.ciihive },
     },
+    {
+      name: 'qa-loanleaf',
+      testDir: './tests/loanleaf',
+      testMatch: /02-qa-recheck\.spec\.ts$/,
+      dependencies: ['setup-loanleaf'],
+      use: {
+        storageState: AUTH.loanleaf,
+        screenshot: 'off',
+        video: 'off',
+        trace: 'off',
+      },
+    },
+    {
+      name: 'qa-ciihive',
+      testDir: './tests/ciihive',
+      testMatch: /02-qa-recheck\.spec\.ts$/,
+      dependencies: ['setup-ciihive'],
+      use: {
+        storageState: AUTH.ciihive,
+        screenshot: 'off',
+        video: 'off',
+        trace: 'off',
+      },
+    },
   ],
 });

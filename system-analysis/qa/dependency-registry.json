@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "evidencePolicy": "Only observed screen routes and API families are executable dependencies. Configured workflows are labeled as metadata, database entities and cross-application links remain unknown unless separately verified.",
+  "applications": {
+    "loanleaf": {
+      "apiHosts": ["ebdaa.mfsys.com.pk"],
+      "modules": [
+        {
+          "id": "loan-management",
+          "name": "Loan Management",
+          "aliases": ["loan", "loan application", "loan workflow", "loan origination"],
+          "keywords": ["loan", "application", "approval", "disbursement", "schedule"],
+          "screens": [
+            { "name": "Loan Application", "route": "/home/loan/loanApplication" },
+            { "name": "On-hold Applications", "route": "/home/loan/onholdApplication" },
+            { "name": "Returned Applications", "route": "/home/loan/returnedApplication" },
+            { "name": "Update Inspector", "route": "/home/loan/updateInspector" },
+            { "name": "Application Review", "route": "/home/loan/pendingReview" },
+            { "name": "Assign Inspector", "route": "/home/loan/pendingSecondVisitStage1" },
+            { "name": "Second Visit", "route": "/home/loan/pendingSecondVisitStage2" },
+            { "name": "Credit Officer / Collection Review", "route": "/home/loan/pendingCreditOfficerReview" },
+            { "name": "Final Collection Review", "route": "/home/loan/pendingCollectionReview" },
+            { "name": "Executive Loan Decision", "route": "/home/loan/pendingLoanDecision" },
+            { "name": "Notify Customer", "route": "/home/loan/pendingNotifyCustomer" },
+            { "name": "Promissory Note", "route": "/home/loan/pendingPromissoryNote" },
+            { "name": "Loan Authorization / Disbursement Review", "route": "/home/loan/pendingLoanAuthorization" }
+          ],
+          "apiFamilies": [
+            "GET /configuration/organizations/timezone",
+            "GET /loan/organizations/{orgId}/dailyoperations/companydate",
+            "POST /loan/sqldb/select",
+            "POST /loan/mongodb/select",
+            "POST /loan/mongodb/lazylist"
+          ],
+          "workflowEvidence": {
+            "classification": "inferred from visible LoanLeaf menu order",
+            "description": "Visible loan application and review queues; transition rules and cross-app handoff are unverified."
+          },
+          "integrationPoints": [],
+          "databaseEntities": [],
+          "testCases": ["LL-F-04", "LL-F-05", "LL-F-06", "API-04"]
+        },
+        {
+          "id": "customer-profile",
+          "name": "Customer Profile",
+          "aliases": ["customer", "customer registration", "customer profile"],
+          "keywords": ["customer", "profile", "registration", "identity"],
+          "screens": [
+            { "name": "Customer Profile", "route": "/home/loan/customerProfile" }
+          ],
+          "apiFamilies": ["POST /loan/mongodb/select", "POST /security/mongodb/select"],
+          "workflowEvidence": {
+            "classification": "observed screen; lifecycle unverified",
+            "description": "Customer Profile route and selector/list calls were observed; no customer submission was made."
+          },
+          "integrationPoints": [],
+          "databaseEntities": [],
+          "testCases": ["LL-F-02", "LL-F-03"]
+        },
+        {
+          "id": "loan-inquiry",
+          "name": "Loan Inquiry",
+          "aliases": ["inquiry", "loan search", "loan report"],
+          "keywords": ["inquiry", "search", "report", "loan"],
+          "screens": [
+            { "name": "Loan Inquiry", "route": "/home/inquiry/loanInquiry" }
+          ],
+          "apiFamilies": ["POST /loan/mongodb/lazylist"],
+          "workflowEvidence": {
+            "classification": "observed screen; query behavior unverified",
+            "description": "Inquiry screen is visible; no search was executed during the read-only inventory."
+          },
+          "integrationPoints": [],
+          "databaseEntities": [],
+          "testCases": ["LL-F-06"]
+        }
+      ]
+    },
+    "ciihive": {
+      "apiHosts": ["www.ebdaa.mfsys.com.pk"],
+      "modules": [
+        {
+          "id": "customer-registration",
+          "name": "Customer Registration",
+          "aliases": ["customer", "crm", "individual customer", "crm registration"],
+          "keywords": ["customer", "registration", "crm", "identity", "profile"],
+          "screens": [],
+          "blockedScreenReason": "CRM form routes are metadata-driven. The exact browser route/query needed to open the registered form has not been captured in the current evidence, so this run checks the authenticated shell only and marks screen-level coverage blocked.",
+          "apiFamilies": [
+            "GET /crm/mongodb/metadata",
+            "GET /crm/mongodb/workflow",
+            "POST /crm/mongodb/lazylist"
+          ],
+          "workflowEvidence": {
+            "classification": "verified through API metadata",
+            "description": "BN_WF_CP_REGISTRATION points to BN_WF_CP_AUTHORIZATION; CREATE_CUSTOMER_PROFILE is configured on the authorization form. Hook execution is unknown."
+          },
+          "integrationPoints": [
+            {
+              "name": "Customer handoff to LoanLeaf",
+              "classification": "unknown due to lack of evidence",
+              "details": "No correlated customer ID or cross-application request has been observed."
+            }
+          ],
+          "databaseEntities": [],
+          "testCases": ["CH-F-01", "CH-F-02", "INT-01"]
+        },
+        {
+          "id": "loan-origination",
+          "name": "Loan Origination",
+          "aliases": ["loan", "loan management", "individual loan", "loan application"],
+          "keywords": ["loan", "origination", "workflow", "account", "approval"],
+          "screens": [],
+          "blockedScreenReason": "Loan form routes are metadata-driven and exact route parameters were not retained. The authenticated shell is rechecked; screen-level coverage remains blocked.",
+          "apiFamilies": [
+            "GET /loan/mongodb/metadata",
+            "GET /loan/mongodb/workflow",
+            "POST /loan/mongodb/lazylist",
+            "POST /loan/sqldb/select"
+          ],
+          "workflowEvidence": {
+            "classification": "verified through API metadata",
+            "description": "BN_WF_IL_CREATELOAN and BN_WF_IL_AUTHORIZELOAN declare workflow stages and hooks; execution and account effects are unknown."
+          },
+          "integrationPoints": [
+            {
+              "name": "LoanLeaf loan handoff/status synchronization",
+              "classification": "unknown due to lack of evidence",
+              "details": "No matching loan record, identifier, or cross-application request has been observed."
+            }
+          ],
+          "databaseEntities": [],
+          "testCases": ["CH-F-03", "CH-F-04", "INT-02", "INT-03"]
+        },
+        {
+          "id": "deposit-operations",
+          "name": "Deposit Operations",
+          "aliases": ["deposit", "term deposit", "tdr"],
+          "keywords": ["deposit", "term deposit", "account", "transaction"],
+          "screens": [],
+          "blockedScreenReason": "Exact authenticated menu route targets for deposit screens are not available in the route evidence registry; shell-only recheck.",
+          "apiFamilies": [
+            "GET /deposit/mongodb/metadata",
+            "GET /deposit/mongodb/workflow",
+            "POST /deposit/mongodb/lazylist",
+            "POST /deposit/sqldb/select"
+          ],
+          "workflowEvidence": {
+            "classification": "visible module/menu only",
+            "description": "Deposit and term-deposit routes were visible and navigated; individual workflows were not exercised."
+          },
+          "integrationPoints": [],
+          "databaseEntities": [],
+          "testCases": ["CH-F-05"]
+        },
+        {
+          "id": "general-ledger",
+          "name": "General Ledger",
+          "aliases": ["gl", "ledger", "accounting"],
+          "keywords": ["general ledger", "ledger", "accounting", "batch"],
+          "screens": [],
+          "blockedScreenReason": "Exact authenticated menu route targets for GL screens are not available in the route evidence registry; shell-only recheck.",
+          "apiFamilies": [
+            "GET /generalledger/mongodb/metadata",
+            "GET /generalledger/mongodb/workflow",
+            "POST /generalledger/mongodb/lazylist"
+          ],
+          "workflowEvidence": {
+            "classification": "visible module/menu only",
+            "description": "General Ledger routes were visible and navigated; transaction and approval behavior was not exercised."
+          },
+          "integrationPoints": [],
+          "databaseEntities": [],
+          "testCases": ["CH-F-05"]
+        }
+      ]
+    }
+  },
+  "integration": {
+    "status": "unknown",
+    "verifiedCrossApplicationEndpoints": [],
+    "verifiedSharedIdentifiers": [],
+    "verifiedDatabaseEntities": [],
+    "note": "Shared IPs, browser third-party dependencies, and hostname similarity are not evidence of application integration."
+  }
+}

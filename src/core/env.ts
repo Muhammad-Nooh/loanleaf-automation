@@ -11,6 +11,7 @@ export function required(name: string): string {
 
 export const loanleaf = {
   get url() { return required('LOANLEAF_URL'); },
+  get orgCode() { return required('LOANLEAF_ORG_CODE'); },
   get username() { return required('LOANLEAF_USERNAME'); },
   get password() { return required('LOANLEAF_PASSWORD'); },
 };

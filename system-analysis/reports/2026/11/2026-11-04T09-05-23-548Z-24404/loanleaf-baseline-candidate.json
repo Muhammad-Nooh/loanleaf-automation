@@ -1,0 +1,2088 @@
+{
+  "schemaVersion": 1,
+  "application": "loanleaf",
+  "baselineVersion": 0,
+  "approvalStatus": "candidate-awaiting-manual-approval",
+  "capturedAt": "2026-11-04T09:06:11.661Z",
+  "approvedAt": null,
+  "approvedBy": null,
+  "apiEndpoints": [
+    {
+      "key": "Configuration|ebdaa.mfsys.com.pk|GET|/configuration/organizations/{id}/dailyoperations/companydate",
+      "module": "Configuration",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/configuration/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 30,
+        "median": 65,
+        "min": 43,
+        "max": 80
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 30
+    },
+    {
+      "key": "Configuration|ebdaa.mfsys.com.pk|GET|/configuration/organizations/timezone",
+      "module": "Configuration",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/configuration/organizations/timezone",
+      "requestParameterNames": [],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanytimezone": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 15,
+        "median": 59,
+        "min": 53,
+        "max": 68
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 15
+    },
+    {
+      "key": "Customer Registration|ebdaa.mfsys.com.pk|POST|/crm/mongodb/select",
+      "module": "Customer Registration",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/crm/mongodb/select",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "PGN_GENDCODE": "<string>",
+                "PGN_GENDDESC": "<string>"
+              }
+            ]
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 1,
+        "median": 92,
+        "min": 92,
+        "max": 92
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 1
+    },
+    {
+      "key": "Deposit Operations|ebdaa.mfsys.com.pk|GET|/deposit/organizations/{id}/dailyoperations/companydate",
+      "module": "Deposit Operations",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/deposit/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 15,
+        "median": 67,
+        "min": 45,
+        "max": 72
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 15
+    },
+    {
+      "key": "General Ledger|ebdaa.mfsys.com.pk|GET|/generalledger/organizations/{id}/dailyoperations/companydate",
+      "module": "General Ledger",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/generalledger/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 15,
+        "median": 65,
+        "min": 47,
+        "max": 73
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 15
+    },
+    {
+      "key": "Loan Management|ebdaa.mfsys.com.pk|GET|/loan/organizations/{id}/dailyoperations/companydate",
+      "module": "Loan Management",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/loan/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 15,
+        "median": 64,
+        "min": 43,
+        "max": 71
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 15
+    },
+    {
+      "key": "Loan Management|ebdaa.mfsys.com.pk|POST|/loan/mongodb/lazylist",
+      "module": "Loan Management",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/loan/mongodb/lazylist",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [],
+        [
+          {
+            "BN_MS_LD_LOANDETAIL": {
+              "BLA_LNACCLIENTFIRSTPAYMENTDATE": "<string>",
+              "BLA_LNACDISBURSEMENTDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACEFFECTIVEDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACINTERESTRATE": "<number>",
+              "BLA_LNACTOTALDURATION": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC_FIXED": "<string>",
+              "BLA_LNAPPROVEDAMOUNTFC": "<number>",
+              "DMP_PRODCODE": "<string>",
+              "MLS_LNSHTYPE": "<string>",
+              "PFM_FMODCODE": "<string>",
+              "nodeId": "<string>",
+              "sgtGntrnumber": "<string>"
+            },
+            "BN_MS_LT_LOANAPPTYPE": {
+              "LAT_BKMSNUMBER": "<null>",
+              "LAT_LOANAPPTYPE": "<string>",
+              "LAT_OUTSTANDINGAMT": "<null>",
+              "dueBalances": []
+            },
+            "CMP_CUSTCODE": "<string>",
+            "DMP_PRODCODE": "<string>",
+            "INSPECTION_REQUIRED": "<string>",
+            "LOAN_CLIENTREGION": "<string>",
+            "MBM_BKMSTITLE": "<string>",
+            "SECOND_VISIT_INSPECTOR": "<string>",
+            "_id": {
+              "$oid": "<string>"
+            },
+            "applicationNo": "<string>",
+            "applicationStatus": "<string>",
+            "isApplicationInReturn": "<boolean>",
+            "returnApplicationMember": "<null>",
+            "returnStage": "<null>",
+            "workFlowLog": [
+              {
+                "SUS_USERCODE": "<string>",
+                "applicationStatus": "<string>",
+                "dateModified": {
+                  "$date": "<string>"
+                },
+                "formId": "<string>",
+                "workFlowComment": "<string>"
+              }
+            ],
+            "workFlowRefNum": "<number>",
+            "workFlowStage": "<string>"
+          }
+        ],
+        [
+          {
+            "BN_MS_LD_LOANDETAIL": {
+              "BLA_LNACCLIENTFIRSTPAYMENTDATE": "<string>",
+              "BLA_LNACDISBURSEMENTDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACEFFECTIVEDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACINTERESTRATE": "<number>",
+              "BLA_LNACTOTALDURATION": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC_FIXED": "<string>",
+              "BLA_LNAPPROVEDAMOUNTFC": "<number>",
+              "DMP_PRODCODE": "<string>",
+              "MLS_LNSHTYPE": "<string>",
+              "PFM_FMODCODE": "<string>",
+              "nodeId": "<string>",
+              "sgtGntrnumber": "<string>"
+            },
+            "BN_MS_LT_LOANAPPTYPE": {
+              "LAT_BKMSNUMBER": "<null>",
+              "LAT_LOANAPPTYPE": "<string>",
+              "LAT_OUTSTANDINGAMT": "<null>",
+              "dueBalances": []
+            },
+            "CMP_CUSTCODE": "<string>",
+            "DMP_PRODCODE": "<string>",
+            "LOAN_CLIENTREGION": "<string>",
+            "MBM_BKMSTITLE": "<string>",
+            "_id": {
+              "$oid": "<string>"
+            },
+            "applicationNo": "<string>",
+            "applicationStatus": "<string>",
+            "isApplicationInReturn": "<boolean>",
+            "returnApplicationMember": "<string>",
+            "returnStage": "<null>",
+            "workFlowLog": [
+              {
+                "SUS_USERCODE": "<string>",
+                "applicationStatus": "<string>",
+                "dateModified": {
+                  "$date": "<string>"
+                },
+                "formId": "<string>",
+                "workFlowComment": "<string>"
+              }
+            ],
+            "workFlowRefNum": "<number>",
+            "workFlowStage": "<string>"
+          }
+        ],
+        [
+          {
+            "BN_MS_LD_LOANDETAIL": {
+              "BLA_LNACCLIENTFIRSTPAYMENTDATE": "<string>",
+              "BLA_LNACDISBURSEMENTDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACEFFECTIVEDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACINTERESTRATE": "<number>",
+              "BLA_LNACTOTALDURATION": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC_FIXED": "<string>",
+              "BLA_LNAPPROVEDAMOUNTFC": "<number>",
+              "DMP_PRODCODE": "<string>",
+              "MLS_LNSHTYPE": "<string>",
+              "PFM_FMODCODE": "<string>",
+              "nodeId": "<string>",
+              "sgtGntrnumber": "<string>"
+            },
+            "BN_MS_LT_LOANAPPTYPE": {
+              "LAT_BKMSNUMBER": "<null>",
+              "LAT_LOANAPPTYPE": "<string>",
+              "LAT_OUTSTANDINGAMT": "<null>",
+              "dueBalances": []
+            },
+            "CMP_CUSTCODE": "<string>",
+            "DMP_PRODCODE": "<string>",
+            "MBM_BKMSNUMBER": "<string>",
+            "MBM_BKMSTITLE": "<string>",
+            "_id": {
+              "$oid": "<string>"
+            },
+            "applicationNo": "<string>",
+            "applicationStatus": "<string>",
+            "postProcessCompleted": "<boolean>",
+            "postProcessInProgress": "<boolean>",
+            "workFlowLog": [
+              {
+                "SUS_USERCODE": "<string>",
+                "applicationStatus": "<string>",
+                "dateModified": {
+                  "$date": "<string>"
+                },
+                "formId": "<string>",
+                "workFlowComment": "<string>"
+              }
+            ],
+            "workFlowRefNum": "<number>",
+            "workFlowStage": "<string>"
+          }
+        ],
+        [
+          {
+            "BN_MS_LD_LOANDETAIL": {
+              "BLA_LNACCLIENTFIRSTPAYMENTDATE": "<string>",
+              "BLA_LNACDISBURSEMENTDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACEFFECTIVEDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACINTERESTRATE": "<number>",
+              "BLA_LNACTOTALDURATION": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC_FIXED": "<string>",
+              "BLA_LNAPPROVEDAMOUNTFC": "<number>",
+              "DMP_PRODCODE": "<string>",
+              "MLS_LNSHTYPE": "<string>",
+              "PFM_FMODCODE": "<string>",
+              "nodeId": "<string>",
+              "sgtGntrnumber": "<string>"
+            },
+            "BN_MS_LT_LOANAPPTYPE": {
+              "LAT_BKMSNUMBER": "<null>",
+              "LAT_LOANAPPTYPE": "<string>",
+              "LAT_OUTSTANDINGAMT": "<null>",
+              "dueBalances": []
+            },
+            "CMP_CUSTCODE": "<string>",
+            "DMP_PRODCODE": "<string>",
+            "MBM_BKMSTITLE": "<string>",
+            "_id": {
+              "$oid": "<string>"
+            },
+            "applicationNo": "<string>",
+            "applicationStatus": "<string>",
+            "isApplicationInReturn": "<boolean>",
+            "workFlowLog": [
+              {
+                "SUS_USERCODE": "<string>",
+                "applicationStatus": "<string>",
+                "dateModified": {
+                  "$date": "<string>"
+                },
+                "formId": "<string>",
+                "workFlowComment": "<string>"
+              }
+            ],
+            "workFlowRefNum": "<number>",
+            "workFlowStage": "<string>"
+          }
+        ],
+        [
+          {
+            "BN_MS_LD_LOANDETAIL": {
+              "BLA_LNACCLIENTFIRSTPAYMENTDATE": "<string>",
+              "BLA_LNACDISBURSEMENTDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACEFFECTIVEDATE": {
+                "$date": "<string>"
+              },
+              "BLA_LNACINTERESTRATE": "<number>",
+              "BLA_LNACTOTALDURATION": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC": "<number>",
+              "BLA_LNAPPLIEDAMOUNTFC_FIXED": "<string>",
+              "BLA_LNAPPROVEDAMOUNTFC": "<number>",
+              "DMP_PRODCODE": "<string>",
+              "MLS_LNSHTYPE": "<string>",
+              "PFM_FMODCODE": "<string>",
+              "nodeId": "<string>",
+              "sgtGntrnumber": "<string>"
+            },
+            "BN_MS_LT_LOANAPPTYPE": {
+              "LAT_BKMSNUMBER": "<null>",
+              "LAT_LOANAPPTYPE": "<string>",
+              "LAT_OUTSTANDINGAMT": "<null>",
+              "dueBalances": []
+            },
+            "CMP_CUSTCODE": "<string>",
+            "DMP_PRODCODE": "<string>",
+            "MBM_BKMSTITLE": "<string>",
+            "_id": {
+              "$oid": "<string>"
+            },
+            "applicationNo": "<string>",
+            "applicationStatus": "<string>",
+            "workFlowLog": [
+              {
+                "SUS_USERCODE": "<string>",
+                "applicationStatus": "<string>",
+                "dateModified": {
+                  "$date": "<string>"
+                },
+                "formId": "<string>",
+                "workFlowComment": "<string>"
+              }
+            ],
+            "workFlowRefNum": "<number>",
+            "workFlowStage": "<string>"
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 13,
+        "median": 86,
+        "min": 67,
+        "max": 314
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 13
+    },
+    {
+      "key": "Loan Management|ebdaa.mfsys.com.pk|POST|/loan/mongodb/select",
+      "module": "Loan Management",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/loan/mongodb/select",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "BDO_PROMISSORYFILE": [
+                  {
+                    "newFileName": "<max-depth>",
+                    "oldFileName": "<max-depth>"
+                  }
+                ],
+                "workFlowRefNum": "<number>"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "CR_CODE": "<string>",
+                "CR_DESC": "<string>"
+              }
+            ]
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 11,
+        "median": 80,
+        "min": 40,
+        "max": 85
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 11
+    },
+    {
+      "key": "Loan Management|ebdaa.mfsys.com.pk|POST|/loan/sqldb/select",
+      "module": "Loan Management",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/loan/sqldb/select",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "DMP_PRODCODE": "<string>",
+                "DMP_PRODDESC": "<string>"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "PCD_CORDCODE": "<string>",
+                "PCD_CORDDESC": "<string>"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "decimals_allowed": "<number>",
+                "digits_allowed": "<number>"
+              }
+            ]
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 180,
+        "median": 161,
+        "min": 17,
+        "max": 375
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 180
+    },
+    {
+      "key": "Security / Authentication|ebdaa.mfsys.com.pk|GET|/security/translation/loanleaf/getTranslations",
+      "module": "Security / Authentication",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/security/translation/loanleaf/getTranslations",
+      "requestParameterNames": [
+        "POR_ORGACODE",
+        "language"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE",
+        "language"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "ar_loanleaf": {
+            "20102": "<string>",
+            "20117": "<string>",
+            "<truncated>": "<more-keys>",
+            "Another Customer": "<string>",
+            "CMP_CUSTCODE": "<string>",
+            "City": "<string>",
+            "Commercial": "<string>",
+            "Excellent": "<string>",
+            "Family and Friends": "<string>",
+            "Industrial": "<string>",
+            "LSV_CURBUSINCOME": "<string>",
+            "LSV_CUSTPREVFINAMT": "<string>",
+            "LSV_CUSTPREVFINNUM": "<string>",
+            "LSV_GRNTRINCOME": "<string>",
+            "LSV_HIGHBUSINCOME": "<string>",
+            "LSV_INSTAACCDETAILS": "<string>",
+            "LSV_ISBRANCHREJECT": "<string>",
+            "LSV_ISCUSTPREVFINANCE": "<string>",
+            "LSV_ISCUSTPROMNOTE": "<string>",
+            "LSV_ISCUSTSUBMTHSAV": "<string>",
+            "LSV_ISCUSTWEAKPT": "<string>",
+            "LSV_ISDEALCMLENT": "<string>",
+            "LSV_ISDELAYREASONCRT": "<string>",
+            "LSV_ISDISCREPANCY": "<string>",
+            "LSV_ISGRNTRPAYIMP": "<string>",
+            "LSV_ISGRNTRPROM": "<string>",
+            "LSV_ISINSALSLIP": "<string>",
+            "LSV_ISINSTAACCOUNT": "<string>",
+            "LSV_ISLOANTRUEPURP": "<string>",
+            "LSV_ISPAYIMPEXP": "<string>",
+            "LSV_ISPROJREVIEW": "<string>",
+            "LSV_ISRECAMTRED": "<string>",
+            "LSV_ISSALDIFF": "<string>",
+            "LSV_ISSOCIALACC": "<string>",
+            "LSV_ISSOCIALACCVIEW": "<string>",
+            "LSV_ISSTATAMTLG": "<string>",
+            "LSV_LOANUSEDETAIL": "<string>",
+            "LSV_RETOHTERS": "<string>",
+            "LSV_RETSALARY": "<string>",
+            "LSV_SOCADVINCOME": "<string>",
+            "LSV_TOTALINCOME": "<string>",
+            "LSV_TOTALLIAB": "<string>",
+            "Location for Rent": "<string>",
+            "Low\t": "<string>",
+            "Medium": "<string>",
+            "Microwave": "<string>",
+            "Others": "<string>",
+            "Our Client": "<string>",
+            "Owned by the customer only": "<string>",
+            "Residential": "<string>",
+            "Seasonal": "<string>",
+            "Service": "<string>",
+            "Simple": "<string>",
+            "Social Media": "<string>",
+            "The Site Belongs to the Customer": "<string>",
+            "Village": "<string>",
+            "affiliatedWithGovtAgencies": "<string>",
+            "amlStage": "<string>",
+            "blockNumber": "<string>",
+            "businessAndLoanObjectives": "<string>",
+            "clientIncome": "<string>",
+            "clientMeetAreaLastVisit": "<string>",
+            "clientPhotographed": "<string>",
+            "clientRejectedAtBranchLevel": "<string>",
+            "clientRejectedByCommittee": "<string>",
+            "close": "<string>",
+            "cprNo": "<string>",
+            "currentCardsOtherBank": "<string>",
+            "currentLoansOtherBank": "<string>",
+            "customerOnAlertList": "<string>",
+            "customerOnBlackList": "<string>",
+            "customerPreviouslyAppliedForLoan": "<string>",
+            "didClientConfirmLOVisit": "<string>",
+            "didYouVisit": "<string>",
+            "disabilityAllowance": "<string>",
+            "dsr": "<string>",
+            "firstVisitDate": "<string>",
+            "highCostBonus": "<string>",
+            "housingAllowance": "<string>",
+            "howClientHeardAboutEbdaa": "<string>",
+            "identifier": "<string>",
+            "loanSpecialistReport": "<string>",
+            "matchesApplicationInformation": "<string>",
+            "merchandiseValue": "<string>",
+            "micro": "<string>",
+            "monthlyInstBenefit": "<string>",
+            "nearByLandMark": "<string>",
+            "normal": "<string>",
+            "numberOfRelativesLoans": "<string>",
+            "otherInformation": "<string>",
+            "otherNotes": "<string>",
+            "personality": "<string>",
+            "previousCardsOtherBank": "<string>",
+            "previousLoansOtherBank": "<string>",
+            "promissoryNote": "<string>",
+            "purchasingValue": "<string>",
+            "relative": "<string>",
+            "socialAllowance": "<string>",
+            "sourceOfAdvertising": "<string>",
+            "sourceOfAwareness": "<string>",
+            "typeOfHome": "<string>"
+          },
+          "versionNo": "<number>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 30,
+        "median": 62,
+        "min": 38,
+        "max": 138
+      },
+      "authenticationBehaviors": [
+        "session-request",
+        "unknown"
+      ],
+      "errorResponses": [],
+      "observationCount": 30
+    },
+    {
+      "key": "Security / Authentication|ebdaa.mfsys.com.pk|POST|/security/mongodb/select",
+      "module": "Security / Authentication",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/security/mongodb/select",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "SUS_NAME": "<string>",
+                "SUS_USERCODE": "<string>"
+              }
+            ]
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 3,
+        "median": 92,
+        "min": 32,
+        "max": 134
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 3
+    }
+  ],
+  "uiScreens": [
+    {
+      "module": "Customer Profile",
+      "screen": "Customer Profile",
+      "route": "/home/loan/customerProfile",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 3,
+          "defs": 1,
+          "div": 18,
+          "i": 14,
+          "img": 6,
+          "label": 1,
+          "li": 23,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "ul": 5
+        },
+        "roleCounts": {},
+        "fieldLabels": [
+          "Sunday, 1 November 2026"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 3,
+          "links": 25,
+          "inputs": 0,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 0,
+          "tables": 0
+        }
+      }
+    },
+    {
+      "module": "Loan Inquiry",
+      "screen": "Loan Inquiry",
+      "route": "/home/inquiry/loanInquiry",
+      "structure": {
+        "tagCounts": {
+          "a": 31,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-loan-inquiry": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pagination": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 9,
+          "defs": 1,
+          "div": 32,
+          "h5": 1,
+          "i": 14,
+          "img": 6,
+          "input": 6,
+          "label": 1,
+          "li": 28,
+          "nav": 1,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "td": 42,
+          "th": 14,
+          "thead": 1,
+          "tr": 8,
+          "ul": 6
+        },
+        "roleCounts": {},
+        "fieldLabels": [
+          "Sunday, 1 November 2026"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 9,
+          "links": 25,
+          "inputs": 6,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 0,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Loan Application",
+      "route": "/home/loan/loanApplication",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 3,
+          "defs": 1,
+          "div": 18,
+          "i": 14,
+          "img": 6,
+          "label": 1,
+          "li": 23,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "ul": 5
+        },
+        "roleCounts": {},
+        "fieldLabels": [
+          "Sunday, 1 November 2026"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 3,
+          "links": 25,
+          "inputs": 0,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 0,
+          "tables": 0
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "On-hold Applications",
+      "route": "/home/loan/onholdApplication",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-onhold-application": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 3,
+          "defs": 1,
+          "div": 32,
+          "h5": 1,
+          "i": 14,
+          "img": 6,
+          "label": 1,
+          "li": 23,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "th": 6,
+          "thead": 1,
+          "tr": 1,
+          "ul": 5
+        },
+        "roleCounts": {},
+        "fieldLabels": [
+          "Sunday, 1 November 2026"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 3,
+          "links": 25,
+          "inputs": 0,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 0,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Final Collection Review",
+      "route": "/home/loan/pendingCollectionReview",
+      "structure": {
+        "tagCounts": {
+          "a": 29,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pagination": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 8,
+          "defs": 1,
+          "div": 56,
+          "form": 1,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 4,
+          "label": 5,
+          "li": 26,
+          "nav": 1,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 19,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "td": 18,
+          "th": 9,
+          "thead": 1,
+          "tr": 3,
+          "ul": 6
+        },
+        "roleCounts": {
+          "dialog": 1,
+          "progressbar": 2
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 8,
+          "links": 25,
+          "inputs": 4,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Credit Officer / Collection Review",
+      "route": "/home/loan/pendingCreditOfficerReview",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 6,
+          "defs": 1,
+          "div": 52,
+          "form": 1,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 4,
+          "label": 5,
+          "li": 23,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "th": 9,
+          "thead": 1,
+          "tr": 1,
+          "ul": 5
+        },
+        "roleCounts": {
+          "dialog": 1
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 6,
+          "links": 25,
+          "inputs": 4,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Loan Authorization / Disbursement Review",
+      "route": "/home/loan/pendingLoanAuthorization",
+      "structure": {
+        "tagCounts": {
+          "a": 31,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pagination": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 12,
+          "defs": 1,
+          "div": 64,
+          "form": 1,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 4,
+          "label": 5,
+          "li": 28,
+          "nav": 1,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 23,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "td": 54,
+          "th": 9,
+          "thead": 1,
+          "tr": 7,
+          "ul": 6
+        },
+        "roleCounts": {
+          "dialog": 1,
+          "progressbar": 6
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 12,
+          "links": 25,
+          "inputs": 4,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Executive Loan Decision",
+      "route": "/home/loan/pendingLoanDecision",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 6,
+          "defs": 1,
+          "div": 52,
+          "form": 1,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 4,
+          "label": 5,
+          "li": 23,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "th": 9,
+          "thead": 1,
+          "tr": 1,
+          "ul": 5
+        },
+        "roleCounts": {
+          "dialog": 1
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 6,
+          "links": 25,
+          "inputs": 4,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Notify Customer",
+      "route": "/home/loan/pendingNotifyCustomer",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-notify-customer": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 9,
+          "defs": 1,
+          "div": 83,
+          "form": 2,
+          "h4": 2,
+          "h5": 1,
+          "i": 16,
+          "img": 6,
+          "input": 15,
+          "label": 18,
+          "li": 23,
+          "noscript": 1,
+          "option": 47,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "select": 2,
+          "span": 20,
+          "svg": 1,
+          "table": 2,
+          "tbody": 2,
+          "th": 11,
+          "thead": 2,
+          "tr": 2,
+          "ul": 5
+        },
+        "roleCounts": {
+          "dialog": 2
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "اسم الأم (بالعربية)",
+          "الاسم الكامل (بالعربية)",
+          "الجنس",
+          "الرقم الشخصي",
+          "المنتج",
+          "تاريخ الميلاد",
+          "تاريخ صرف القرض",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "رقم القرض",
+          "رقم الهاتف",
+          "ضابط الائتمان",
+          "عنوان الحساب",
+          "مبلغ القرض المعتمد",
+          "مدة القرض",
+          "نسبة الفائدة السنوية (%)"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 9,
+          "links": 25,
+          "inputs": 15,
+          "selects": 2,
+          "textareas": 0,
+          "forms": 2,
+          "tables": 2
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Promissory Note",
+      "route": "/home/loan/pendingPromissoryNote",
+      "structure": {
+        "tagCounts": {
+          "a": 31,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pagination": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 18,
+          "defs": 1,
+          "div": 52,
+          "form": 1,
+          "h4": 1,
+          "h5": 1,
+          "i": 21,
+          "img": 6,
+          "input": 4,
+          "label": 5,
+          "li": 40,
+          "nav": 1,
+          "noscript": 1,
+          "p": 7,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "td": 30,
+          "th": 5,
+          "thead": 1,
+          "tr": 7,
+          "ul": 12
+        },
+        "roleCounts": {
+          "dialog": 1
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 18,
+          "links": 25,
+          "inputs": 4,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Application Review",
+      "route": "/home/loan/pendingReview",
+      "structure": {
+        "tagCounts": {
+          "a": 30,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pagination": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 12,
+          "defs": 1,
+          "div": 64,
+          "form": 1,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 4,
+          "label": 5,
+          "li": 27,
+          "nav": 1,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 23,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "td": 54,
+          "th": 9,
+          "thead": 1,
+          "tr": 7,
+          "ul": 6
+        },
+        "roleCounts": {
+          "dialog": 1,
+          "progressbar": 6
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 12,
+          "links": 25,
+          "inputs": 4,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Assign Inspector",
+      "route": "/home/loan/pendingSecondVisitStage1",
+      "structure": {
+        "tagCounts": {
+          "a": 31,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pagination": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 12,
+          "defs": 1,
+          "div": 112,
+          "form": 13,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 16,
+          "label": 5,
+          "li": 28,
+          "nav": 1,
+          "ng-select": 12,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 65,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "td": 66,
+          "th": 11,
+          "thead": 1,
+          "tr": 7,
+          "ul": 6
+        },
+        "roleCounts": {
+          "combobox": 12,
+          "dialog": 1
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 12,
+          "links": 25,
+          "inputs": 16,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 13,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Second Visit",
+      "route": "/home/loan/pendingSecondVisitStage2",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 6,
+          "defs": 1,
+          "div": 52,
+          "form": 1,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 4,
+          "label": 5,
+          "li": 23,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "th": 9,
+          "thead": 1,
+          "tr": 1,
+          "ul": 5
+        },
+        "roleCounts": {
+          "dialog": 1
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 6,
+          "links": 25,
+          "inputs": 4,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Returned Applications",
+      "route": "/home/loan/returnedApplication",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-returned-application": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 3,
+          "defs": 1,
+          "div": 32,
+          "h5": 1,
+          "i": 14,
+          "img": 6,
+          "label": 1,
+          "li": 23,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 17,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "th": 6,
+          "thead": 1,
+          "tr": 1,
+          "ul": 5
+        },
+        "roleCounts": {},
+        "fieldLabels": [
+          "Sunday, 1 November 2026"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 3,
+          "links": 25,
+          "inputs": 0,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 0,
+          "tables": 1
+        }
+      }
+    },
+    {
+      "module": "Loan Management",
+      "screen": "Update Inspector",
+      "route": "/home/loan/updateInspector",
+      "structure": {
+        "tagCounts": {
+          "a": 29,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-pagination": 1,
+          "app-pending-applications": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "button": 7,
+          "defs": 1,
+          "div": 62,
+          "form": 3,
+          "h4": 1,
+          "h5": 1,
+          "i": 15,
+          "img": 6,
+          "input": 6,
+          "label": 5,
+          "li": 26,
+          "nav": 1,
+          "ng-select": 2,
+          "noscript": 1,
+          "p": 1,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "span": 25,
+          "svg": 1,
+          "table": 1,
+          "tbody": 1,
+          "td": 11,
+          "th": 11,
+          "thead": 1,
+          "tr": 2,
+          "ul": 6
+        },
+        "roleCounts": {
+          "combobox": 2,
+          "dialog": 1
+        },
+        "fieldLabels": [
+          "Sunday, 1 November 2026",
+          "رفع سند لأمر",
+          "رقم الطلب",
+          "رقم العميل",
+          "عنوان الحساب"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 0,
+        "controls": {
+          "buttons": 7,
+          "links": 25,
+          "inputs": 6,
+          "selects": 0,
+          "textareas": 0,
+          "forms": 3,
+          "tables": 1
+        }
+      }
+    }
+  ],
+  "expectedChanges": [],
+  "contentSha256": "962ce5a950f3dbb345782a301d03b57bdad51eb18bcfb41ff2d4d9799f36b255",
+  "note": "Generated candidate only. Review and manually approve; the QA runner never promotes candidates to approved baselines."
+}

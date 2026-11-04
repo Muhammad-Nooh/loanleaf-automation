@@ -1,0 +1,7 @@
+{
+  "application": "ciihive",
+  "module": "Authentication",
+  "screen": "Login setup",
+  "outcome": "passed",
+  "coverageStatus": "setup"
+}

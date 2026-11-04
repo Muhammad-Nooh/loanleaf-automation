@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 1,
+  "application": "loanleaf",
+  "baselineVersion": 0,
+  "approvalStatus": "candidate-awaiting-manual-approval",
+  "capturedAt": "2026-11-04T09:06:33.572Z",
+  "approvedAt": null,
+  "approvedBy": null,
+  "apiEndpoints": [
+    {
+      "key": "Configuration|ebdaa.mfsys.com.pk|GET|/configuration/organizations/{id}/dailyoperations/companydate",
+      "module": "Configuration",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/configuration/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 3,
+        "median": 372,
+        "min": 342,
+        "max": 411
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 3
+    },
+    {
+      "key": "Configuration|ebdaa.mfsys.com.pk|GET|/configuration/organizations/timezone",
+      "module": "Configuration",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/configuration/organizations/timezone",
+      "requestParameterNames": [],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanytimezone": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 2,
+        "median": 393,
+        "min": 375,
+        "max": 411
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 2
+    },
+    {
+      "key": "Credit Scoring|ebdaa.mfsys.com.pk|POST|/creditscoring/sqldb/select",
+      "module": "Credit Scoring",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/creditscoring/sqldb/select",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [
+          {
+            "controlId": "<string>",
+            "duplicateStepIndex": "<null>",
+            "options": [
+              {
+                "pmd_detailcode": "<string>",
+                "pmd_detailvalue": "<string>"
+              }
+            ],
+            "rowIndex": "<null>"
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 1,
+        "median": 445,
+        "min": 445,
+        "max": 445
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 1
+    },
+    {
+      "key": "Customer Registration|ebdaa.mfsys.com.pk|POST|/crm/mongodb/select",
+      "module": "Customer Registration",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/crm/mongodb/select",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "PGN_GENDCODE": "<string>",
+                "PGN_GENDDESC": "<string>"
+              }
+            ]
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 1,
+        "median": 444,
+        "min": 444,
+        "max": 444
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 1
+    },
+    {
+      "key": "Deposit Operations|ebdaa.mfsys.com.pk|GET|/deposit/organizations/{id}/dailyoperations/companydate",
+      "module": "Deposit Operations",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/deposit/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 1,
+        "median": 406,
+        "min": 406,
+        "max": 406
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 1
+    },
+    {
+      "key": "General Ledger|ebdaa.mfsys.com.pk|GET|/generalledger/organizations/{id}/dailyoperations/companydate",
+      "module": "General Ledger",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/generalledger/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 1,
+        "median": 417,
+        "min": 417,
+        "max": 417
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 1
+    },
+    {
+      "key": "Loan Management|ebdaa.mfsys.com.pk|GET|/loan/organizations/{id}/dailyoperations/companydate",
+      "module": "Loan Management",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/loan/organizations/{id}/dailyoperations/companydate",
+      "requestParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "bgpGlprcompanydate": "<string>",
+          "module": "<string>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 1,
+        "median": 411,
+        "min": 411,
+        "max": 411
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 1
+    },
+    {
+      "key": "Loan Management|ebdaa.mfsys.com.pk|POST|/loan/sqldb/select",
+      "module": "Loan Management",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "POST",
+      "path": "/loan/sqldb/select",
+      "requestParameterNames": [
+        "data"
+      ],
+      "queryParameterNames": [],
+      "requestPayloadShapes": [
+        {
+          "data": "<string>"
+        }
+      ],
+      "responsePayloadShapes": [
+        [
+          {
+            "controlId": "<string>",
+            "options": [
+              {
+                "decimals_allowed": "<number>",
+                "digits_allowed": "<number>"
+              }
+            ]
+          }
+        ]
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 1,
+        "median": 406,
+        "min": 406,
+        "max": 406
+      },
+      "authenticationBehaviors": [
+        "session-request"
+      ],
+      "errorResponses": [],
+      "observationCount": 1
+    },
+    {
+      "key": "Security / Authentication|ebdaa.mfsys.com.pk|GET|/security/translation/loanleaf/getTranslations",
+      "module": "Security / Authentication",
+      "host": "ebdaa.mfsys.com.pk",
+      "method": "GET",
+      "path": "/security/translation/loanleaf/getTranslations",
+      "requestParameterNames": [
+        "POR_ORGACODE",
+        "language"
+      ],
+      "queryParameterNames": [
+        "POR_ORGACODE",
+        "language"
+      ],
+      "requestPayloadShapes": [],
+      "responsePayloadShapes": [
+        {
+          "ar_loanleaf": {
+            "20102": "<string>",
+            "20117": "<string>",
+            "<truncated>": "<more-keys>",
+            "Another Customer": "<string>",
+            "CMP_CUSTCODE": "<string>",
+            "City": "<string>",
+            "Commercial": "<string>",
+            "Excellent": "<string>",
+            "Family and Friends": "<string>",
+            "Industrial": "<string>",
+            "LSV_CURBUSINCOME": "<string>",
+            "LSV_CUSTPREVFINAMT": "<string>",
+            "LSV_CUSTPREVFINNUM": "<string>",
+            "LSV_GRNTRINCOME": "<string>",
+            "LSV_HIGHBUSINCOME": "<string>",
+            "LSV_INSTAACCDETAILS": "<string>",
+            "LSV_ISBRANCHREJECT": "<string>",
+            "LSV_ISCUSTPREVFINANCE": "<string>",
+            "LSV_ISCUSTPROMNOTE": "<string>",
+            "LSV_ISCUSTSUBMTHSAV": "<string>",
+            "LSV_ISCUSTWEAKPT": "<string>",
+            "LSV_ISDEALCMLENT": "<string>",
+            "LSV_ISDELAYREASONCRT": "<string>",
+            "LSV_ISDISCREPANCY": "<string>",
+            "LSV_ISGRNTRPAYIMP": "<string>",
+            "LSV_ISGRNTRPROM": "<string>",
+            "LSV_ISINSALSLIP": "<string>",
+            "LSV_ISINSTAACCOUNT": "<string>",
+            "LSV_ISLOANTRUEPURP": "<string>",
+            "LSV_ISPAYIMPEXP": "<string>",
+            "LSV_ISPROJREVIEW": "<string>",
+            "LSV_ISRECAMTRED": "<string>",
+            "LSV_ISSALDIFF": "<string>",
+            "LSV_ISSOCIALACC": "<string>",
+            "LSV_ISSOCIALACCVIEW": "<string>",
+            "LSV_ISSTATAMTLG": "<string>",
+            "LSV_LOANUSEDETAIL": "<string>",
+            "LSV_RETOHTERS": "<string>",
+            "LSV_RETSALARY": "<string>",
+            "LSV_SOCADVINCOME": "<string>",
+            "LSV_TOTALINCOME": "<string>",
+            "LSV_TOTALLIAB": "<string>",
+            "Location for Rent": "<string>",
+            "Low\t": "<string>",
+            "Medium": "<string>",
+            "Microwave": "<string>",
+            "Others": "<string>",
+            "Our Client": "<string>",
+            "Owned by the customer only": "<string>",
+            "Residential": "<string>",
+            "Seasonal": "<string>",
+            "Service": "<string>",
+            "Simple": "<string>",
+            "Social Media": "<string>",
+            "The Site Belongs to the Customer": "<string>",
+            "Village": "<string>",
+            "affiliatedWithGovtAgencies": "<string>",
+            "amlStage": "<string>",
+            "blockNumber": "<string>",
+            "businessAndLoanObjectives": "<string>",
+            "clientIncome": "<string>",
+            "clientMeetAreaLastVisit": "<string>",
+            "clientPhotographed": "<string>",
+            "clientRejectedAtBranchLevel": "<string>",
+            "clientRejectedByCommittee": "<string>",
+            "close": "<string>",
+            "cprNo": "<string>",
+            "currentCardsOtherBank": "<string>",
+            "currentLoansOtherBank": "<string>",
+            "customerOnAlertList": "<string>",
+            "customerOnBlackList": "<string>",
+            "customerPreviouslyAppliedForLoan": "<string>",
+            "didClientConfirmLOVisit": "<string>",
+            "didYouVisit": "<string>",
+            "disabilityAllowance": "<string>",
+            "dsr": "<string>",
+            "firstVisitDate": "<string>",
+            "highCostBonus": "<string>",
+            "housingAllowance": "<string>",
+            "howClientHeardAboutEbdaa": "<string>",
+            "identifier": "<string>",
+            "loanSpecialistReport": "<string>",
+            "matchesApplicationInformation": "<string>",
+            "merchandiseValue": "<string>",
+            "micro": "<string>",
+            "monthlyInstBenefit": "<string>",
+            "nearByLandMark": "<string>",
+            "normal": "<string>",
+            "numberOfRelativesLoans": "<string>",
+            "otherInformation": "<string>",
+            "otherNotes": "<string>",
+            "personality": "<string>",
+            "previousCardsOtherBank": "<string>",
+            "previousLoansOtherBank": "<string>",
+            "promissoryNote": "<string>",
+            "purchasingValue": "<string>",
+            "relative": "<string>",
+            "socialAllowance": "<string>",
+            "sourceOfAdvertising": "<string>",
+            "sourceOfAwareness": "<string>",
+            "typeOfHome": "<string>"
+          },
+          "versionNo": "<number>"
+        }
+      ],
+      "statusCodes": [
+        200
+      ],
+      "responseDurationMs": {
+        "sampleCount": 2,
+        "median": 279,
+        "min": 153,
+        "max": 405
+      },
+      "authenticationBehaviors": [
+        "session-request",
+        "unknown"
+      ],
+      "errorResponses": [],
+      "observationCount": 2
+    }
+  ],
+  "uiScreens": [
+    {
+      "module": "Customer Profile",
+      "screen": "Customer Profile",
+      "route": "/home/loan/customerProfile",
+      "structure": {
+        "tagCounts": {
+          "a": 26,
+          "app-customer-application-new": 1,
+          "app-customer-profile-new": 1,
+          "app-full-layout": 1,
+          "app-loader": 1,
+          "app-nav-bar": 1,
+          "app-notification": 1,
+          "app-root": 1,
+          "app-side-nav": 1,
+          "area": 1,
+          "br": 2,
+          "button": 16,
+          "defs": 1,
+          "div": 520,
+          "form": 1,
+          "h4": 2,
+          "h5": 1,
+          "i": 23,
+          "iframe": 1,
+          "img": 15,
+          "input": 85,
+          "label": 88,
+          "li": 23,
+          "map": 1,
+          "ng-select": 30,
+          "noscript": 1,
+          "option": 3,
+          "p": 2,
+          "path": 1,
+          "polyline": 1,
+          "router-outlet": 2,
+          "script": 4,
+          "select": 1,
+          "slot": 1,
+          "span": 204,
+          "svg": 1,
+          "ul": 5
+        },
+        "roleCounts": {
+          "combobox": 30,
+          "dialog": 2,
+          "region": 1
+        },
+        "fieldLabels": [
+          "CRS *",
+          "FATCA *",
+          "Sunday, 1 November 2026",
+          "اسم الأم (بالإنجليزية) *",
+          "اسم الأم (بالعربية) *",
+          "اسم الجد (بالإنجليزية)",
+          "اسم الجد (بالعربية)",
+          "اسم العائلة (بالإنجليزية) *",
+          "اسم العائلة (بالعربية) *",
+          "اسم المبنى",
+          "اسم صاحب العمل *",
+          "الاسم الأوسط 1 (بالإنجليزية) *",
+          "الاسم الأوسط 1 (بالعربية) *",
+          "الاسم الأوسط 2 (بالإنجليزية) *",
+          "الاسم الأوسط 2 (بالعربية) *",
+          "الاسم الأوسط 3 (بالإنجليزية)",
+          "الاسم الأوسط 3 (بالعربية)",
+          "الاسم الأوسط 4 (بالإنجليزية)",
+          "الاسم الأوسط 4 (بالعربية)",
+          "الاسم الأول (بالإنجليزية) *",
+          "الاسم الأول (بالعربية) *",
+          "الاسم الكامل (بالإنجليزية) *",
+          "الاسم الكامل (بالعربية) *",
+          "البريد الإلكتروني",
+          "البريد الإلكتروني *",
+          "البلد *",
+          "البلد *",
+          "التعليم *",
+          "التوقيع",
+          "الجنس *",
+          "الجنس *",
+          "الجنسية *",
+          "الجنسية *",
+          "الحالة الاجتماعية *",
+          "الحد الأدنى والاعلى للمبيعات الشهرية *",
+          "الدخل الشهري *",
+          "اللقب (السيد، السيدة) *",
+          "المحافظة *",
+          "المدينة *",
+          "المعرف الأساسي",
+          "المهنة *",
+          "انتهاء تصريح الإقامة",
+          "تاريخ الإصدار *",
+          "تاريخ الميلاد *",
+          "تاريخ الميلاد *",
+          "تاريخ انتهاء الصلاحية",
+          "تاريخ انتهاء الصلاحية *",
+          "حالة التوظيف *",
+          "خط الطول",
+          "خط العرض",
+          "دخل العميل *",
+          "رفع الموافقة *",
+          "رفع الوثيقة",
+          "رقم الشقة *",
+          "رقم الطريق *",
+          "رقم المبنى *",
+          "رقم المجمع *",
+          "رقم الهاتف *",
+          "رقم الهاتف المحمول",
+          "رقم الهاتف المحمول",
+          "رقم الهوية *",
+          "رقم الهوية *",
+          "رقم تصريح الإقامة",
+          "رمز العنوان *",
+          "سبب فتح الحساب *",
+          "سبب فتح الحساب البنكي *",
+          "شخصية سياسية *",
+          "صافي المبيعات *",
+          "صلاحية تصريح العمل *",
+          "طبيعة العمل الحر*",
+          "طبيعة النشاط/الأعمال *",
+          "عدد المعالين *",
+          "علامات فارقة",
+          "عنوان المراسلات",
+          "قيمة الإيجار الشهري *",
+          "مصدر الأموال *",
+          "مصدر الأموال *",
+          "مصدر الدخل الثابت *",
+          "مقيم ضريبي أمريكي *",
+          "مكان الميلاد *",
+          "منطقة المشروع أو السكن *",
+          "مواطن أمريكي *",
+          "نوع الحساب *",
+          "نوع العنوان",
+          "نوع المستند",
+          "نوع الهوية *",
+          "وُلِد في الولايات المتحدة *",
+          "يرجى رفع صورة العميل"
+        ],
+        "navigationRoutes": [
+          "/home/inquiry/loanInquiry",
+          "/home/loan/customerProfile",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/dashboard",
+          "/home/loan/loanApplication",
+          "/home/loan/onholdApplication",
+          "/home/loan/pendingCollectionReview",
+          "/home/loan/pendingCreditOfficerReview",
+          "/home/loan/pendingLoanAuthorization",
+          "/home/loan/pendingLoanDecision",
+          "/home/loan/pendingNotifyCustomer",
+          "/home/loan/pendingPromissoryNote",
+          "/home/loan/pendingReview",
+          "/home/loan/pendingSecondVisitStage1",
+          "/home/loan/pendingSecondVisitStage2",
+          "/home/loan/permission",
+          "/home/loan/returnedApplication",
+          "/home/loan/updateInspector",
+          "/home/settings/changePassword",
+          "/home/translation/editTranslation"
+        ],
+        "validationMessageCount": 1,
+        "controls": {
+          "buttons": 16,
+          "links": 25,
+          "inputs": 85,
+          "selects": 1,
+          "textareas": 0,
+          "forms": 1,
+          "tables": 0
+        }
+      }
+    }
+  ],
+  "expectedChanges": [],
+  "contentSha256": "b5fb8ba1212ec88f19d396bb380aea20ab0b167832d2a1604debb38a50f1d9e3",
+  "note": "Generated candidate only. Review and manually approve; the QA runner never promotes candidates to approved baselines."
+}

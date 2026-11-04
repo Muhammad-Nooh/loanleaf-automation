@@ -1,0 +1,21 @@
+{
+  "name": "loanleaf-automation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright + TypeScript UI automation for the LoanLeaf portal and its CiiHive back office",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:loanleaf": "playwright test --project=loanleaf",
+    "test:ciihive": "playwright test --project=ciihive",
+    "codegen:loanleaf": "playwright codegen https://loanleaf.mfsys.com.pk/auth/login",
+    "codegen:ciihive": "playwright codegen https://ebdaa.mfsys.com.pk/#/login",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.0"
+  }
+}

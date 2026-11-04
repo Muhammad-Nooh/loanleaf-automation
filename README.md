@@ -1,0 +1,62 @@
+# LoanLeaf Automation
+
+UI automation (Playwright + TypeScript) for two connected apps:
+
+| App | What it is | URL |
+|---|---|---|
+| **LoanLeaf** | Portal where customers and their loan accounts are created | https://loanleaf.mfsys.com.pk/auth/login |
+| **CiiHive** | Core back office behind LoanLeaf (approvals, accounts) | https://ebdaa.mfsys.com.pk/#/login |
+
+The goal is one chain: create a customer + loan account in LoanLeaf, then
+verify / approve it in CiiHive.
+
+## Setup
+
+```
+npm install
+npx playwright install chromium
+copy .env.example .env     # Windows (use cp on Mac/Linux), then fill in credentials
+```
+
+`.env` is gitignored. Never commit credentials.
+
+## Run
+
+```
+npm test                    # everything
+npm run test:loanleaf       # LoanLeaf only
+npm run test:ciihive        # CiiHive only
+npm run test:headed         # watch the browser
+npm run report              # open the HTML report
+```
+
+Each app logs in once in a `setup` project and the session is saved under
+`.auth/`, so the tests themselves start already logged in.
+
+## Finding selectors
+
+Login locators in `src/pages/*/LoginPage.ts` are first guesses. Record the real
+ones with:
+
+```
+npm run codegen:loanleaf
+npm run codegen:ciihive
+```
+
+## Layout
+
+| Path | Purpose |
+|---|---|
+| `src/core/env.ts` | Reads `.env`, defines saved-session paths |
+| `src/pages/loanleaf/`, `src/pages/ciihive/` | One page object per screen |
+| `src/data/customer.ts` | Fresh unique test customer per run |
+| `tests/setup/` | Login steps that save each app's session |
+| `tests/loanleaf/`, `tests/ciihive/` | Specs, numbered in chain order |
+
+## Roadmap
+
+- [ ] Get both logins passing
+- [ ] LoanLeaf: create customer
+- [ ] LoanLeaf: create loan account for the customer
+- [ ] CiiHive: find and approve the customer / loan
+- [ ] Share records between apps via `run-state/chain.json`

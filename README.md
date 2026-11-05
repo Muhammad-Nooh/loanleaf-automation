@@ -57,6 +57,39 @@ npm run codegen:ciihive
 | `tests/setup/` | Login steps that save each app's session |
 | `tests/loanleaf/`, `tests/ciihive/` | Specs, numbered in chain order |
 
+## Building the flow (test systems only)
+
+The end-to-end flow lives in `tests/flow/` and runs in order:
+
+1. **LoanLeaf:** create customer profile and submit the loan application (one session, because saving the customer continues straight into the application)
+2. **LoanLeaf:** approve the loan through every stage
+3. **CiiHive:** Cash Transaction > Loan > Disbursement (loan account + amount), Save
+4. **CiiHive:** Authorization > Loan, authorize the disbursement
+
+```
+$env:ALLOW_WRITES="1"; npm run flow:headed      # PowerShell
+ALLOW_WRITES=1 npm run flow:headed              # Mac / Linux
+```
+
+Without `ALLOW_WRITES=1` these specs skip, so `npm test` never changes data.
+Facts passed between steps are kept in `run-state/chain.json`.
+
+Status: steps 1 and 2 are written from a recording of LoanLeaf. The stages
+Assign Inspector, Second Visit and Executive Approval were only opened in that
+recording, so they follow the usual pattern and may need a fix after a first
+run. Steps 3 and 4 are `test.fixme` until a CiiHive recording is added.
+
+Page logic is in `src/flow/loanleaf/` (`ui.ts` has the dropdown helpers,
+`customer.ts`, `application.ts`, `approvals.ts`). Uploads use `fixtures/sample.pdf`.
+
+To record a step, use English and a test customer:
+
+```
+npx playwright codegen "https://ebdaa.mfsys.com.pk/#/login" -o recorded-ciihive.ts
+```
+
+Never commit recordings that contain typed passwords (`recorded-*.ts` is gitignored).
+
 ## System analysis
 
 The evidence-bounded application inventories, observed APIs, integration

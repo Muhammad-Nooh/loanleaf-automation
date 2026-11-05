@@ -5,3 +5,5 @@ run-state/
 test-results/
 playwright-report/
 blob-report/
+
+recorded-*.ts

@@ -34,6 +34,13 @@ export default defineConfig({
       use: { storageState: AUTH.ciihive },
     },
     {
+      // End-to-end write flow (create customer, loan, disburse, authorize).
+      // Each spec logs in itself. Skips unless ALLOW_WRITES=1.
+      name: 'flow',
+      testDir: './tests/flow',
+      timeout: 900_000,
+    },
+    {
       name: 'qa-loanleaf',
       testDir: './tests/loanleaf',
       testMatch: /02-qa-recheck\.spec\.ts$/,

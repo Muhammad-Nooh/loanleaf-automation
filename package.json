@@ -12,7 +12,9 @@
     "qa": "node scripts/qa.mjs",
     "codegen:loanleaf": "playwright codegen https://loanleaf.mfsys.com.pk/auth/login",
     "codegen:ciihive": "playwright codegen https://ebdaa.mfsys.com.pk/#/login",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "flow": "playwright test --project=flow",
+    "flow:headed": "playwright test --project=flow --headed"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
